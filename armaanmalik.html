@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>armaan malik</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="AM.css">
+</head>
+<body>
+
+
+	<div class="container">
+		  <div id="upper">
+  	<ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="listen.html" class="navbar__links" id="home-page"><i class="fas fa-home"></i></a>
+          </li>
+          <li class="navbar__item">
+            <a href="listen.html#artist" class="navbar__links" id="services-page"
+              >Artist</a>
+          </li>
+    </ul>
+
+</div>
+
+		<div class="music-player">
+			<!--left side-->
+			<div class="player">
+				<img src="https://yt3.ggpht.com/Y3Xd5a92Olf_5x5igDk8MzzqyKChkP3jKoV6-Iux8e7zChGDMSsrLIt95T8GZd--0FTqQE9KfQ=s900-c-k-c0x00ffffff-no-rj" alt="Record" class="record">
+				<Strong><p id="title">Song Name</p></Strong>
+				<div class="slidecontainer">
+					<i class="fas fa-volume-down"></i>
+					<input type="range" min="0" max="100" value="50" class="slider">
+                    <i class="fas fa-volume-up"></i>
+                </div>
+                      
+                <div class="controls">
+       	                <button class="previous" id="previous"><i class="fas fa-step-backward" ></i></button>
+                        <button class="play-pause" id="play-pause"><i class="fas fa-play"></i></button>
+                        <button class="next" id="next"><i class="fas fa-step-forward" ></i></button>
+                </div>
+                <div class="duration">
+                <input type="range" min="0" max="100" value="0" id="duration_slider" class="duration_slider" onchange="change_duration()">
+                </div>
+			</div>
+			<!--right side-->
+			<div class="playlist">
+				<h3>ARMAAN MALIK</h3>
+				<h2>PLAYLIST</h2>
+				<ul class="song-list">
+					<li data-src="music/MainHoonHeroTera.mp3" data-name="Main Hoon Hero Tera" data-index="0"><span>Main Hoon Hero Tera</span><span>04:44</span></li>
+                    <li data-src="music/BuddhuSaMann.mp3" data-name="Buddhu Sa Mann" data-index="1"><span>Buddhu Sa Mann</span><span>03:26</span></li>
+                    <li data-src="music/JabTak.mp3" data-name="Jab Tak" data-index="2"><span>Jab Tak</span><span>02:54</span></li>
+					<li data-src="music/HumNahiSudhrenge.mp3" data-name="Hum Nahi Sudhrenge" data-index="3"><span>Hum Nahi Sudhrenge</span><span>05:02</span></li>
+					<li data-src="music/ButtaBomma.mp3" data-name="Butta Bomma" data-index="4"><span>Butta Bomma</span><span>03:18</span></li>
+                    <li data-src="music/MainRahoonYaNaRahoon.mp3" data-name="Main Rahoon Ya Na Rahoon" data-index="5"><span>Main Rahoon Ya Na Rahoon</span><span>05:09</span></li>
+					<li data-src="music/SabTera.mp3" data-name="Sab Tera" data-index="6"><span>Sab Tera</span><span>03:48</span></li>
+					<li data-src="music/ChaleAana.mp3" data-name="Chale Aana" data-index="7"><span>Chale Aana</span><span>04:31</span></li>
+					<li data-src="music/DilMeinHoTum.mp3" data-name="Dil Mein Ho Tum" data-index="8"><span>Dil Mein Ho Tum</span><span>05:26</span></li>
+					<li data-src="music/Besabriyaan.mp3" data-name="Besabriyaan" data-index="9"><span>Besabriyaan</span><span>04:15</span></li>
+				</ul>
+                <audio src="" id="audio"></audio>
+       		</div>
+	    </div>
+    </div>
+    <script src="hed.js"></script>
+</body>
+</html>
+
